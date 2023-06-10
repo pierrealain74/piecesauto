@@ -1,0 +1,33 @@
+[
+    {
+        "id": 1,
+        "image": "images/ampoule-led.png",
+        "nom": "Optiques",
+        "description" : "Distance d’éclairage : 100 mètres !"
+    },
+    {
+        "id": 2,
+        "image": "images/plaquettes-frein.png",
+        "nom": "Freinage",       
+        "description" : "Une qualité de freinage optimale, par tous les temps."
+    },
+    {
+        "id": 3,
+        "image": "",
+        "nom": "Optiques",
+        "description" : "Pour y voir clair dans l’habitacle."
+        
+    },
+    {
+        "id": 4,
+        "image": "images/liquide-frein.png",
+        "nom": "Liquides",
+        "description" : ""
+    },
+    {
+        "id": 5,
+        "image": "images/balai-essuie-glace.png",
+        "nom": "Pieces détachées",
+        "description" : "Performances d’essuyage au top ! Longueur : 550 mm"
+    }
+]
