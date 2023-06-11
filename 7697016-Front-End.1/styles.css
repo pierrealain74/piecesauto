@@ -57,10 +57,9 @@ main {
 	margin-top: 4px;
 	margin-bottom: 4px;
 }
-.fiches card{
-flex-direction: column;
-width: 27%;
-margin: 12px 0 12px 0;
+.fiches h2{
+  display: block;
+  clear: both;
 }
 .card{
 width: 200px;
