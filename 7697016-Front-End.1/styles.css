@@ -29,14 +29,16 @@ main {
 	display: flex;
 	flex-direction: row;
 }
-
+.titre-categorie{
+	width: 100%;
+}
 
 .filtres {
 	border-radius: 4px;
 	box-shadow: 0px 0px 4px gray;
-	margin: 8px;
+	margin: 8px 0 8px 0;
 	padding: 8px;
-	min-width: 300px;
+	min-width: 200px;
 	min-height: 400px;
 }
 .filtres h3 {
@@ -57,10 +59,10 @@ main {
 	margin-top: 4px;
 	margin-bottom: 4px;
 }
-.fiches h2{
-  display: block;
-  clear: both;
-}
+/* .fiches h2{
+  display: flex;
+  flex: 1;
+} */
 .card{
 width: 200px;
 background-color: white;
@@ -68,4 +70,7 @@ border-radius: 20px;
 padding: 25px;
 filter: drop-shadow(0px 3px 10px rgba(0, 0, 0, 0.1));
 margin: 15px;
+}
+button, input[type="range"]{
+	width: 350px;
 }

@@ -21,7 +21,7 @@
         "id": 3,
         "image": "",
         "nom": "Ampoule boîte à gants",
-        "prix": 5.49,
+        "prix": 5,
         "categorie": "Optiques",
         "description" : "Pour y voir clair dans l’habitacle.",
         "available": false 
@@ -30,7 +30,7 @@
         "id": 4,
         "image": "images/liquide-frein.png",
         "nom": "Liquide de frein",
-        "prix": 9.60,
+        "prix": 20,
         "categorie": "Liquides",
         "available": true 
     },
@@ -39,7 +39,7 @@
         "image": "images/balai-essuie-glace.png",
         "nom": "Balai d'essuie-glace",
         "categorie": "Pieces détachées",
-        "prix": 29.10,
+        "prix": 15,
         "description" : "Performances d’essuyage au top ! Longueur : 550 mm",
         "available": true 
     },
@@ -48,7 +48,7 @@
         "image": "",
         "nom": "Phare gauche",
         "categorie": "Pieces détachées",
-        "prix": 45.52,
+        "prix": 50,
         "description" : "Lorem ipsum dolir is samet puitou sin noulivat !",
         "available": true 
     },
@@ -57,7 +57,7 @@
         "image": "",
         "nom": "Clignotant droit",
         "categorie": "Pieces détachées",
-        "prix": 25.20,
+        "prix": 45,
         "description" : "Lorem ipsum dolir is samet puitou sin noulivat !",
         "available": true 
     },
@@ -66,7 +66,7 @@
         "image": "",
         "nom": "Calendre",
         "categorie": "Pieces détachées",
-        "prix": 85,
+        "prix": 30,
         "description" : "Calendre de voiture",
         "available": true 
     },
@@ -75,7 +75,7 @@
         "image": "",
         "nom": "Toit ouvrant",
         "categorie": "Pieces détachées",
-        "prix": 195,
+        "prix": 55,
         "description" : "Dolor sit amet, siti us delivrou rouant met sit ouvrite",
         "available": false 
     },
@@ -84,7 +84,16 @@
         "image": "",
         "nom": "Lunette arrière",
         "categorie": "Pieces détachées",
-        "prix": 105,
+        "prix": 25,
+        "description" : "Dolor sit amet, siti us delivrou rouant met sit ouvrite",
+        "available": true 
+    },
+    {
+        "id": 11,
+        "image": "",
+        "nom": "Banquette arrière",
+        "categorie": "Pieces détachées",
+        "prix": 60,
         "description" : "Dolor sit amet, siti us delivrou rouant met sit ouvrite",
         "available": true 
     }
