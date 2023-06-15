@@ -80,3 +80,15 @@ button, input[type="range"]{
 li {
 	cursor: pointer;
   }
+  .popup {
+	display: none; /* Par défaut, le popup est masqué */
+	position: absolute; /* Position absolue pour le placer où vous le souhaitez */
+	top: 0; /* Position en haut */
+	left: 0; /* Position à gauche */
+	background-color: #fff; /* Couleur de fond du popup */
+	padding: 10px; /* Espacement intérieur du contenu */
+	border: 1px solid #ccc; /* Bordure du popup */
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Ombre portée */
+	z-index: 9999; /* Valeur de z-index pour le positionnement au-dessus des autres éléments */
+  }
+  
