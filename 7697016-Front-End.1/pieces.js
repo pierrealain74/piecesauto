@@ -1,17 +1,24 @@
-const reponse = await fetch('pieces-autos.json')
+import { ajoutListenersAvis } from "./avis.js";
+
+const reponse = await fetch('http://localhost:8081/pieces')
 const pieces = await reponse.json()
 
+//Recherche de la catégorie envoyée par GET depuis index
 const url = new URL(window.location.href)
 const params = new URLSearchParams(url.search)
 const cat = params.get('cat')
 
 
-//Premier affichage de la page : appel de la fonction ajouter FichePoduit via la variable cat passé via index.html
+//Premier affichage de la page : appel de la fonction ajouter FicheProduit via la variable cat passé via index.html
 pieces.forEach((piece) => {
     if (piece.categorie === cat) {
         ajouterFicheProduit(piece);
     }
 });
+
+// Apres ajout des produits d'une cat, Ajout des avis
+ajoutListenersAvis()
+
 
 //Afficher le titre de la vategorie envoyé depuis la page index
 const titreCategorie = document.querySelector('.titre-categorie')
@@ -124,7 +131,7 @@ function ajouterFicheProduit(piece) {
     const imageElement = document.createElement('img')
     imageElement.src =   piece.image === null || piece.image === undefined || piece.image === ""
         ? 'images/no-picture.jpg' : piece.image    
-    console.log(imageElement)
+    //  console.log(imageElement)
 
     const titreElement = document.createElement('h2')
     titreElement.innerText = piece.nom
@@ -140,14 +147,22 @@ function ajouterFicheProduit(piece) {
 
     const categorieElement = document.createElement('p')
     categorieElement.innerText = piece.categorie ?? ("pas de catégorie")
-    //console.log(titreElement.innerText)        
+    //console.log(titreElement.innerText)
 
-        divFiche.appendChild(imageElement)
-        divFiche.appendChild(titreElement)
-        divFiche.appendChild(prixElement)
-        divFiche.appendChild(descriptionElement)
+    //Ajout du bouton pour recupérer les Avis d'un produit avec son ID
+    const boutonAvis = document.createElement('button')
+    boutonAvis.dataset.id = piece.id
+    boutonAvis.classList.add('btavis')
+    boutonAvis.innerText = `Affiche les avis du produit : ${piece.id}`
 
-        fichesElement.appendChild(divFiche)
+
+    divFiche.appendChild(imageElement)
+    divFiche.appendChild(titreElement)
+    divFiche.appendChild(prixElement)
+    divFiche.appendChild(descriptionElement)
+    divFiche.appendChild(boutonAvis)
+
+    fichesElement.appendChild(divFiche)
 
 }
 

@@ -74,3 +74,9 @@ margin: 15px;
 button, input[type="range"]{
 	width: 350px;
 }
+.btavis{
+	width: 100%;
+}
+li {
+	cursor: pointer;
+  }
